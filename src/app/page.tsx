@@ -26,7 +26,7 @@ export default function Home() {
     setResults(null);
 
     try {
-      const res = await fetch('https://comapre-tools-backend-production.up.railway.app/ask', {
+      const res = await fetch('https://comapre-tools-backend-production.up.railway.app', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question }),
